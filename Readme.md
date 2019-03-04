@@ -1,5 +1,5 @@
-Stuff I've made/gathered for my own use, over the years. 
-For sysadmin mostly.
+Some stuff I've made/gathered for my own use, over the years. 
+Really basic stuff.
 
 Python, Bash/Shell, MSDOS even. 
 
