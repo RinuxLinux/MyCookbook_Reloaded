@@ -1,0 +1,54 @@
+# af1 "T:\FILMS_SERIES\ANIMES\FILMS_ANIMATION"
+# af2 "T:\FILMS_SERIES\ANIMES\FILMS_ANIMATION\=ASTERIX="
+# af3 "T:\FILMS_SERIES\ANIMES\FILMS_ANIMATION\=DISNEY=\DISNEY EN FR"
+# af4 "T:\FILMS_SERIES\ANIMES\FILMS_ANIMATION\=DISNEY=\DISNEY EN VO"
+# af5 "T:\FILMS_SERIES\ANIMES\FILMS_ANIMATION\=JAPON="
+# anS "T:\FILMS_SERIES\ANIMES\SERIES_ANIMATION"
+# doc "T:\FILMS_SERIES\DOCUS"
+# f01 "T:\FILMS_SERIES\FILMS\Curiosités Ethniques"
+# f02 "T:\FILMS_SERIES\FILMS\FOR KIDS"
+# f03 "T:\FILMS_SERIES\FILMS\Films anglophones"
+# f04 "T:\FILMS_SERIES\FILMS\Films anglophones\=Wes Anderson="
+# f05 "T:\FILMS_SERIES\FILMS\Films autrephones"
+# f06 "T:\FILMS_SERIES\FILMS\Films francophones"
+# f07 "T:\FILMS_SERIES\FILMS\Noir & Blanc francophones"
+# f08 "T:\FILMS_SERIES\FILMS\Noir & Blanc francophones\=PAGNOL="
+# f09 "T:\FILMS_SERIES\FILMS\Noir & Blanc francophones\=TATI="
+# f10 "T:\FILMS_SERIES\FILMS\Noir & Blanc francophones\=TRUFFAUT="
+# f11 "T:\FILMS_SERIES\FILMS\Noir & Blanc non-francophones"
+# f12 "T:\FILMS_SERIES\FILMS\Sci-Fi"
+# f13 "T:\FILMS_SERIES\FILMS\Sci-Fi\=MARVEL="
+# f14 "T:\FILMS_SERIES\FILMS\Spectacles"
+# f15 "T:\FILMS_SERIES\FILMS\Westerns"
+# ser "T:\FILMS_SERIES\SERIES"
+anS LastMan
+anS South.Park
+anS We.Bare.Bears
+f06 Chez Nous 2017
+f13 Ant-Man.2015
+f13 Captain.America.The.First.Avenger.2011
+f13 Captain.America.The.Winter.Soldier.2014
+f13 Doctor.Strange.2016
+f13 Guardians.of.the.Galaxy.Vol.2.2017
+f15 Il.Etait.Une.Fois.Dans.l.Ouest.1969
+f13 Iron.Man.2.2010
+f13 Iron.Man.2008
+f13 Iron.Man.3.2013
+f07 La.Chienne.1931
+f07 La.regle.du.jeu.1939
+f03 Lawless.2012
+f06 Les.Bronzes.1978
+f06 Les.Bronzes.Amis.Pour.La.Vie.2006
+f06 Les.Bronzes.Font.Du.Ski.1979
+f13 The.Avengers.2012
+af3 The.Rescuers.1974
+f13 Thor.2011
+f13 Thor.The.Dark.World.2013
+ser Game.of.Thrones
+ser Legion
+ser Life.in.Pieces
+ser Silicon.Valley
+ser The.Expanse
+ser The.Last.Man.On.Earth
+ser Veep
+ser Westworld.2016
