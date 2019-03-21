@@ -13,7 +13,8 @@ def logging(log_file, msg, reset=False):
 	if reset :
 		if os.path.isfile(log_file):
 			os.remove(log_file)
-	flux = open(log_file, 'a')
-	flux.write(msg)
-	flux.write('\n')
-	flux.close()
+	
+	with open(log_file, 'a') as f:
+		f.write(msg + '\n')
+		flux.close()
+

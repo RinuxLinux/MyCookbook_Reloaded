@@ -34,7 +34,7 @@ def md5(fname):
 def get_filelist(root, patterns='*', single_level=False, yield_folders=False):
 	'''
 	List files and directories
-		usage: lstdir = list(get_filelist(str_path, "*.jpg;*.png")
+	usage: lstdir = list(get_filelist(str_path, "*.jpg;*.png")
 	'''
 	patterns = patterns.split(';')
 	for path, subdirs, files in os.walk(root):
