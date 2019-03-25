@@ -33,11 +33,9 @@ with open(file, 'w') as flux:
 	flux.write('%s' % ('x' * 2**18)) 
 	flux.close()
 
-file2 = "F:\\MAGASIN-F1\\FILMS-F2\\PASSENGERS (2016)\\Passengers.2016.1080p.HC.HDRip.XviD.AC3-EVO.mkv"
+file2 = "F:\\LABO-F1\\test-file-size.mkv"
 
-tmp = []
-tmp += [file, file2]
-
+tmp = [file, file2]
 
 for file in tmp:
 	print('Taille du fichier   : %s') % file
@@ -51,7 +49,7 @@ OUTPUT
 Taille du fichier   : test_getsize.txt
 avec os.stat        : 256.00 KB
 avec os.path.getsize: 256.00 KB
-Taille du fichier   : F:\MAGASIN-F1\FILMS-F2\PASSENGERS (2016)\Passengers.2016.1080p.HC.HDRip.XviD.AC3-EVO.mkv
+Taille du fichier   : F:\\LABO-F1\\test-file-size.mkv
 avec os.stat        : 3.79 GB
 avec os.path.getsize: 3.79 GB
 '''

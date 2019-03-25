@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python
+﻿#! python2
 #-*-coding: utf-8 -*-
 #NOM......get_size_md5
 #EXT.......py
@@ -7,13 +7,14 @@
 #DESCR....write fname, size and md5sum of ebooks into a .cvs
 #USAGE....get_size_md5.py
 MYFNAME   	= "get_size_md5"
-MYVERSION 	= "v1.4"
+MYVERSION 	= "v1.5"
 MYEXT		= ".py"
 MYDESCR		= "write fname, size and md5sum of ebooks into a .cvs"
 MYUSAGE		= "$ python {fn}_{vn}{ext}".format(fn=MYFNAME,vn=MYVERSION,ext=MYEXT)
 
 '''
 NOTE DE VERSION
+2019-03-25 v1.5   minor fixes
 2017-08-21 v1.4   change output
 2017-08-19 v1.3   Add column for db update 
 2017-08-18 v1.2   Add separator ";" for output
@@ -31,7 +32,6 @@ if os.name == "posix":
 	sys.exit("Script non adapté pour UNIX. Revoir code source @ %s" % MYFILE) 
 
 NOW = time.strftime("%Y-%m-%d_%H%M%S")
-SLASH = os.sep
 AUTOEXEC = os.path.join(MYPATH, '%s_%s_autoexec.bat' % (MYFNAME, MYVERSION))
 CSV_NAME = 'get_size_md5_%s.csv' % NOW
 
@@ -91,7 +91,7 @@ def md5(fname):
 
 
 def main():
-	global mypaths, MYPATH, SLASH, CSV_NAME
+	global mypaths, MYPATH, CSV_NAME
 
 	filelist = []
 	for mypath in mypaths:
@@ -111,7 +111,7 @@ def main():
 	#fy=form_year,fm=form_mon,fd=form_day
 	i=2
 	for file in filelist:
-		filename = file.split(SLASH)[-1]
+		filename = os.path.split(file)[-1]
 		size = os.path.getsize(file)
 		md5sum = md5(file)
 		# INSERT OR REPLACE  INTO tri160517 VALUES ("Electronique_UIT 1ere Annee_2017_id0543,pdf","Electronique","UIT 1ere Annee","Livre","electronique","Duveau J","Dunod","01/01/17",2,"978-2-10-076447-1",272,1,"d9fd7e8630000b9498d1656e43de4637",11132803);
@@ -136,11 +136,11 @@ def main():
 		print('%s;%s;%s;%s') % (filename, verbatim, md5sum, size)
 		
 	print "********\n",  '\n'.join(msg), "\n********\n"
-	flux = open(MYPATH + SLASH + CSV_NAME, 'w')
+	flux = open(os.path.join(MYPATH,CSV_NAME), 'w')
 	flux.write('\n'.join(msg))
 	flux.close()
 
-	with open(MYPATH + SLASH + "updoot_%s.txt" % NOW, 'w') as f:
+	with open(os.path.join(MYPATH,"updoot_%s.txt" % NOW), 'w') as f:
 		f.write('\n'.join(updoot))
 		f.write('\n\n')
 		f.write('\n'.join(form1))

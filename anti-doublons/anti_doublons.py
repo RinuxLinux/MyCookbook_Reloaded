@@ -3,21 +3,18 @@
 #NOM......anti_doublons
 #EXT.......py
 #MAJOR....1
-#MINOR....0
+#MINOR....1
 #DESCR....Retourne une liste d'elements uniques d'une liste
 #USAGE....anti_doublons(liste, sort=False, case_sensitive=True)
 
 def anti_doublons(liste, sort=False, case_sensitive=True):
 	"""
-	tri les doublons et elimine les elements nuls
+	Tri les doublons et elimine les elements nuls
 	
-	@ver 20180219_1426
-	@arg ['liste', 'of', 'elements']
-	@ret ['liste', 'sans', 'dups']
+	@ver   20190325_1700
+	@arg   list
+	@ret   list sans dups
 	"""
-
-	if DEBUG1:
-		print "[ ANTIDBL @0591 ] ... Anti-doublons, sort=%s, case_sensitive=%s" % (sort, case_sensitive)
 
 	temp = []
 	if case_sensitive:
@@ -31,4 +28,5 @@ def anti_doublons(liste, sort=False, case_sensitive=True):
 
 	if sort:
 		temp.sort()
+
 	return temp

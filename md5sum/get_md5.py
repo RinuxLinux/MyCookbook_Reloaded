@@ -20,6 +20,7 @@ MYPATH = os.path.dirname(os.path.abspath(__file__))
 MYFILE = os.path.abspath(__file__)
 
 #################################################
+
 def md5(fname):
 	'''
 	import hashlib
@@ -30,6 +31,7 @@ def md5(fname):
 			hash_md5.update(chunk)
 	return hash_md5.hexdigest()
 
+#################################################
 	
 def get_filelist(root, patterns='*', single_level=False, yield_folders=False):
 	'''

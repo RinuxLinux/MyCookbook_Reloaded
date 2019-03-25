@@ -35,9 +35,7 @@ if len(sys.argv) > 1:
 else:
 	option = MYPATH
 
-
-
-
+####################################################
 
 def del_empty_dirs(s_dir):
 	'''
@@ -57,6 +55,7 @@ def del_empty_dirs(s_dir):
 		print('... %s | %s | %s') % ('@del_empty_dirs', s_dir, b_empty)
 	return b_empty
 
+####################################################
 
 def get_filelist(root, patterns='*', single_level=False, yield_folders=False):
 	'''
@@ -76,7 +75,7 @@ def get_filelist(root, patterns='*', single_level=False, yield_folders=False):
 		if single_level:
 			break
 
-
+####################################################
 
 def remove_empty_dirs_extended(path):
 	''' EAFP Approach (Easier to Ask for Forgiveness than Permission) '''
@@ -87,6 +86,7 @@ def remove_empty_dirs_extended(path):
 		if ex.errno == errno.ENOTEMPTY:
 			print "Dir not empty"
 
+####################################################
 
 def remove_empty_dirs(path):
 	''' EAFP Approach (Easier to Ask for Forgiveness than Permission) '''

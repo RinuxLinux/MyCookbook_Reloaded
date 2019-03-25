@@ -10,11 +10,11 @@
 import time
 
 def get_time():
-	NOW = ':'.join(str(x) for x in time.localtime()[:6])
-	DATE = '-'.join(['%02i' % int(x) for x in NOW.split(':')[:3]])
-	TIME = ''.join(['%02i' % int(x) for x in NOW.split(':')[3:6]])
+	NOW   = ':'.join(str(x) for x in time.localtime()[:6])
+	DATE  = '-'.join(['%02i' % int(x) for x in NOW.split(':')[:3]])
+	TIME  =  ''.join(['%02i' % int(x) for x in NOW.split(':')[3:6]])
 	TIME2 = ':'.join(['%02i' % int(x) for x in NOW.split(':')[3:6]])
-	NOW2 = '%s_%s' % (DATE, TIME)
+	NOW2  = '%s_%s' % (DATE, TIME)
 	epoch = int(time.mktime(time.strptime(NOW2, '%Y-%m-%d_%H%M%S'))) - time.timezone
 	return NOW2
 

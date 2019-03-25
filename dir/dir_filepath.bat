@@ -1,1 +1,0 @@
-dir /b /s > dir_filepath.txt
