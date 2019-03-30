@@ -12,6 +12,10 @@
 	&emsp;Change letter/phrase case to lower, upper, proper case,<br />
 	&emsp;or capitalize.</p>
 
+<p><b>bash-colour-in-terminal</b> (bash)<br />
+	&emsp;An example of colouring the output of a shell script.<br />
+	&emsp;The file is an actual installation script for Node.js on Linux.</p>
+
 <p><b>bash-user-input</b> (bash/shell)<br />
 	&emsp;Example of user input treatment. How to get user input <br />
 	&emsp;and use it in case statement.<br />
