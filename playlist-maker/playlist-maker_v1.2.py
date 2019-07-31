@@ -3,11 +3,15 @@
 #NOM......playlist-maker
 #EXT.......py
 #MAJOR....1
-#MINOR....1
+#MINOR....2
 #DESCR....make m3u playlists out of ['mkv', '.mp4', '.avi', '.ts'] found in F:\\DL\\Mouh-x
 #USAGE....playlist-maker_v*.py 
 
-MYPATH = "F:\\DL\\Mouh-x"
+import glob, os, shutil
+
+MYPATH = os.path.dirname(os.path.abspath(__file__))
+#MYPATH = "F:\\DL\\Mouh-x"
+
 TOUT = ['mkv', '.mp4', '.avi', '.ts']
 
 MYFNAME   	= "playlist-maker"
@@ -21,7 +25,6 @@ NOTE DE VERSION --- PENSER A CHANGER $MYFNAME etc.
 2017-08-25 v1.1   En-tête mise aux normes
 '''
 
-import glob, os, shutil
 
 
 dir = []
